@@ -21,3 +21,13 @@
 		transform-origin: 5% 5%;
 	}
 }
+@layer theme {
+	:root,:host {
+		--spacing:.25rem;
+	}
+}
+@layer utilities {
+	.mx-6 {
+		margin-inline: calc(var(--spacing) * 6);
+	}
+}
